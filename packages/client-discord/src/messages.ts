@@ -972,7 +972,7 @@ export class MessageManager {
         );
 
         // strip all special characters
-        messageContent = messageContent.replace(/[^\p{L}\p{N}\s\-_./:?=&]/gu, "");
+        messageContent = messageContent.replace(/[^\p{L}\s]/gu, "") ;
 
         // short responses where eliza should stop talking and disengage unless mentioned again
         if (
